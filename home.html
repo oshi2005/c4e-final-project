@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Domino Pizza VN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div id="navbar">
+        <ul>
+          <li>
+            <img src="https://dominos.vn/img/logo/domino-horizontal-dark.svg" />
+          </li>
+          <li><a class="nav-link" href="#"> Mã e-voucher </a></li>
+          <li><a class="nav-link" href="#"> Khuyến Mãi </a></li>
+          <li><a class="nav-link" href="#"> Thực đơn </a></li>
+          <li><a class="nav-link" href="#"> Theo dõi đơn hàng </a></li>
+          <li>
+            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="slideShow">
+        <img
+          src="https://img.dominos.vn/Mua-1-tang-1-PC.jpg"
+          class="imgSlide"
+        />
+        <img
+          src="https://img.dominos.vn/Mix-Match-89k-PC.jpg"
+          class="imgSlide"
+        />
+        <img
+          src="https://img.dominos.vn/Giam-70-pizza-thu-2-PC.jpg"
+          class="imgSlide"
+        />
+        <button class="btnSlide-right" onclick="plusImg(1)">&#60;</button>
+        <button class="btnSlide-left" onclick="plusImg(-1)">&#62;</button>
+      </div>
+
+      <!-- banner  -->
+
+      <div class="container">
+        <div class="btn">
+          <button id="btn-1" class="btn-order normal">Giao Hàng Tận Nơi</button>
+          <button id="btn-2" class="btn-order normal">Đặt Đến Lấy</button>
+        </div>
+        <div class="border_container">
+          <div class="bg_container">
+            <div class="form_container">
+              <input type="text" placeholder="Vui long nhap dia chi" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="products">
+        <div id="header">
+          <h3 style="flex: 3">Hôm nay ăn gì ?</h3>
+          <a href="#" style="flex: 4"> khuyến mãi mỗi ngày</a>
+          <a href="#" style="flex: 5">Best sellers</a>
+        </div>
+        <div id="Main-products">
+          <ul>
+            <li>
+              <div id="product-item">
+                <div id="product-img">
+                  <a href="#">
+                    <img
+                      src="https://img.dominos.vn/Sausage-Kid-Mania.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div id="product-infor">
+                  <a href="#">PIZZA XÚC XÍCH XỐT PHÔ MAI - SAUSAGE KID MANIA</a>
+                  <div class="price">79,000₫</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="product-item">
+                <div id="product-img">
+                  <a href="#">
+                    <img
+                      src="https://img.dominos.vn/pizza-lap-xuong.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div id="product-infor">
+                  <a href="#"
+                    >PIZZA LẠP XƯỞNG XỐT TRỨNG MUỐI MAYONNAISE - SAIGON MANIA
+                    PIZZA</a
+                  >
+                  <div class="price">99,000₫</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="product-item">
+                <div id="product-img">
+                  <a href="#">
+                    <img
+                      src="https://img.dominos.vn/Okonomiyaki-banh-xeo-nhat.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div id="product-infor">
+                  <a href="#">PIZZA BÁNH XÈO NHẬT - OKONOMIYAKI</a>
+                  <div class="price">99,000₫</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="product-item">
+                <div id="product-img">
+                  <a href="#">
+                    <img
+                      src="https://img.dominos.vn/Pizza-Hai-San-Xot-Mayonnaise-Ocean-Mania.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div id="product-infor">
+                  <a href="#">PIZZA HẢI SẢN XỐT MAYONNAISE - OCEAN MANIA</a>
+                  <div class="price">99,000₫</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="home.js"></script>
+  <script src="main.js"></script>
+</html>
