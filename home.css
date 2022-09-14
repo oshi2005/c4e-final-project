@@ -213,10 +213,10 @@ a:hover {
     max-width: 100%;
     margin: 0 auto;
 }
-#product-infor a {
+.product-infor a {
     text-decoration: none;
 }
-#product-item {
+.product-item {
     background-color: #717273; 
     height: 100%;
 /* }
