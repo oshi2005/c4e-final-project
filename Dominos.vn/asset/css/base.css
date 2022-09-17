@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --hex-color: #004666;
+    --blue-color: #00628f;
+    --white-rgba: rgba(255, 255, 255, 0.1);
+    --border-color: #717273;
+    --analogous-color: #fdedef;
+    --red-color: #e31837;
+    --grey-lightest: #f2f4f8;   
+    --border-grey-lighter: #dee2e6 ;
+    --light-gray: #ececec;
+    --text-mustard: #d9c38e;
+
+    --header-height: 80px;
+}
+
+/* Reponsive */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -5px;
+    margin-right: -5px; */
+}
+
+/* Text */
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+@media (min-width: 768px) {
+    .product__grid {
+        flex-wrap: wrap;
+    }
+    .flex__fit {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+
+/* Button */
+
+
+.button {
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 1.4rem;
+}
+
