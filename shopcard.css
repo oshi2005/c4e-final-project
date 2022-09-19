@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+:root {
+    --colorContent:  #004666;
+    --hover:#00628f;
+     --blue: #007bff;
+     --purple: #6f42c1;
+     --pink: #e83e8c;
+     --red: #dc3545;
+     --orange: #fd7e14;
+     --yellow: #ffc107;
+     --green: #28a745;
+     --teal: #20c997;
+     --cyan: #17a2b8;
+     --white: #fff;
+     --gray: #6c757d;
+ }
+#navbar {
+    background-color: var(--colorContent);
+    width: 100%;
+}
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar ul li {
+    padding: 8px;
+    list-style-type: none;
+    display: flex;
+
+}
+#navbar ul li a {
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 16px;
+    color: #fff;
+    
+}
+  .nav-link:hover {
+    background-color: var(--hover);
+
+    opacity: 0.7;
+}
+#navbar ul li img {
+    width: 75%;
+}
+
+#contain {
+    padding: 50px 0px;
+    background-image: url(/img/background1.png);
+}
+#container { 
+    margin: 0px 300px;
+}
+.products-menu {
+    width: 100%;
+}
+.product-img {
+    padding: 0px 15px;
+}
+.product-img img {
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+}
+.product-item {
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+}
+.product-infor {
+    padding: 0px 15px;
+    font-size: 20px;
+    font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+    
+
+.product-infor span {
+    margin-bottom: 15px;
+    color: #fff;
+}
+.product-infor p {
+    margin-bottom: 8px;
+    color: #717273;
+    font-style: italic;
+    
+}
+.btnDelete {
+    margin-top: 20px;
+}
+.input {
+    width: 50px;
+    height: 30px;
+    
+   
+    
+}
+.btn-bill {
+    line-height: 50px;
+    margin-right: 60px;
+}
+.btn-bill a {
+    font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: var(--hover);
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+}
+.bntMath {
+    height: 30px ;
+    width: 30px;
+    
+}
+.btnDelete {
+    padding: 5px;
+    background-color:  #004666;
+    color: #fff;
+    font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    border-color: #004666;
+    border-radius: 5px;
+}
+.header h3 {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.btnDelete:hover {
+    background-color: var(--hover);
+    font-size: 15px;
+}
+.btn-bill a:hover {
+    color: red;
+    font-size: 25px;
+}
+#pay {
+    padding: 50px 0px;
+}
+.pay-infor {
+    margin: 0px 300px;
+}
+.pay-infor {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+
+.total {
+    /* display: flex; */
+    padding: 10px;
+    text-align: center;
+}
+
+.total p {
+    font-family:  'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: #717273 ;
+    font-size: 23px;
+    display: inline;
+    font-style: italic;
+
+
+
+}
+.total  span {
+    padding-top: 7px;
+    padding-left: 15px;
+    color:#717273 ;
+    font-size: 20px;
+    display: inline;
+}
+.bntcash {
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--red);
+    color: #fff;
+    border-color: var(--red);
+    border-radius: 5px;
+}
+.cash {
+    text-align: center;
+}
+.bntcash:hover {
+    font-size: 20px
+
+}
+
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: 40vh;
+    background:#004666;
+  }
+  .text{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    padding: 50px 0px;
+    }
+  .text h3{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+  
+  } 
+  .text .fa-brands{
+    color: #fff;
+    font-size: 25px;
+    padding: 0 40px;
+  }
+  /* .container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+  .col {
+    display: flex;
+  }
+  
+  .cover_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 30px;
+    color: #fff;
+    
+  }
+  .domino_footer{
+    width: 100px;
+    height: 100px;
+  }
+  .phone p {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    
+  }
+  .call_footer{
+    text-align: center;
+  }
+  .call_footer span {
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+    padding-left: 30px;
+  }
+  
+  .col_footer li {
+    list-style-type: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 40px;
+    transition: all 0.3s ease;
+  }
+  .col_footer li:hover{
+    color: yellow;
+    
+  }
+  .buyproduct {
+    background-position: cover;
+    background-size: center;
+  
+  }
+
+
