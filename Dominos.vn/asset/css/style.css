@@ -49,9 +49,7 @@
     background-position: 100%;
 }
 
-.product__layout--search {
 
-}
 
 .product__layout--input {
     padding: 6rem 0;
@@ -89,10 +87,6 @@
 
 /* ---------- Product view---------- */
 
-.product__view {
-  
-
-}
 
 .product__filter {
     display: flex;
