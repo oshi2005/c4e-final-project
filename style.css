@@ -12,7 +12,7 @@
 #navbar {
   background-color: var(--blue);
   width: 100%;
-  position: fixed;
+  /* position: absolute; */
   z-index: 100;
 }
 #navbar ul {
@@ -42,7 +42,7 @@
   width: 75%;
 }
 #menu {
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 .normal {
   color: #e31837;
@@ -148,7 +148,10 @@ body {
 
 
 /* voucher */
-
+.card_voucher{
+  position: relative;
+  
+}
 .card_body {
   width: 760px;
   height: 263px;
@@ -205,11 +208,7 @@ body {
   font-size: 25px;
   padding: 0 40px;
 }
-/* .container_footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
+
 .col {
   display: flex;
 }
