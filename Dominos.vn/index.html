@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="./asset/css/base.css" />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <link rel="stylesheet" href="./style.css" />
+
 
     <title>Domino Pizza VN</title>
   </head>
@@ -28,15 +28,15 @@
           <li>
             <img src="https://dominos.vn/img/logo/domino-horizontal-dark.svg" />
           </li>
-          <li><a class="nav-link" href="#"> Mã e-voucher </a></li>
-          <li><a class="nav-link" href="#"> Khuyến Mãi </a></li>
-          <li><a class="nav-link" href="#"> Thực đơn </a></li>
-          <li><a class="nav-link" href="#"> Theo dõi đơn hàng </a></li>
+          <li><a class="nav-link" href="/voucher.html"> Mã e-voucher </a></li>
+          <li><a class="nav-link" href="/index.html"> Khuyến Mãi </a></li>
+          <li><a class="nav-link" href="/Dominos.vn/index.html"> Thực đơn </a></li>
+          <li><a class="nav-link" href="/following.html"> Theo dõi đơn hàng </a></li>
           <li>
             <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
           </li>
           <li>
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/shopcard.html">
               <i class="fa-solid fa-bag-shopping"></i
             ></a>
           </li>
@@ -45,70 +45,53 @@
 
       <div id="container">
         <!-- Background -->
-
+       
         <div class="product__view">
+          <!-- PREMIUM -->
           <div class="product__filter">
             <div class="product__categories">
-              <div class="product__filter--list">
-                <ul class="product__filter--menu">
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href=""> Tất cả </a>
-                  </li>
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href="">
-                      <img
-                        class="tag--logo"
-                        src="https://img.dominos.vn/fried-shrimp_1f364.png"
-                        alt=""
-                      />
-                      Hải sản
-                    </a>
-                  </li>
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href="">
-                      <img
-                        class="tag--logo"
-                        src="https://img.dominos.vn/cut-of-meat_1f969.png"
-                        alt=""
-                      />
-                      Bò</a
-                    >
-                  </li>
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href="">
-                      <img
-                        class="tag--logo"
-                        src="https://img.dominos.vn/poultry-leg_1f357.png"
-                        alt=""
-                      />
-                      Gà</a
-                    >
-                  </li>
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href="">
-                      <img
-                        class="tag--logo"
-                        src="https://img.dominos.vn/bacon_1f953.png"
-                        alt=""
-                      />
-                      Heo</a
-                    >
-                  </li>
-                  <li class="product__filter--item">
-                    <a class="product__filter--link" href="">
-                      <img
-                        class="tag--logo"
-                        src="https://img.dominos.vn/leafy-green_1f96c.png"
-                        alt=""
-                      />
-                      Ăn chay
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                <div class="product__filter--list">
+                    <ul class="product__filter--menu">
+                        <li class="product__filter--item All">
+                            <a class="product__filter--link" href="#">
+                                Tất cả
+                            </a>
+                        </li>
+                        <li class="product__filter--item seeFood">
+                            <a class="product__filter--link" href="">
+                                <img class="tag--logo" src="https://img.dominos.vn/fried-shrimp_1f364.png"
+                                    alt="">
+                                Hải sản
+                            </a>
+                        </li>
+                        <li class="product__filter--item beef">
+                            <a class="product__filter--link" href="">
+                                <img class="tag--logo" src="https://img.dominos.vn/cut-of-meat_1f969.png"
+                                    alt="">
+                                Bò</a>
+                        </li>
+                        <li class="product__filter--item chicken">
+                            <a class="product__filter--link" href="">
+                                <img class="tag--logo" src="https://img.dominos.vn/poultry-leg_1f357.png"
+                                    alt="">
+                                Gà</a>
+                        </li>
+                        <li class="product__filter--item meat ">
+                            <a class="product__filter--link" href="">
+                                <img class="tag--logo" src="https://img.dominos.vn/bacon_1f953.png" alt="">
+                                Heo</a>
+                        </li>
+                        <li class="product__filter--item healthy">
+                            <a class="product__filter--link" href="">
+                                <img class="tag--logo" src="https://img.dominos.vn/leafy-green_1f96c.png"
+                                    alt="">
+                                Ăn chay
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <!-- PREMIUM -->
+        </div>
           <div class="category__heading">
             <div class="category__heading--categories">
               <div class="hr">
@@ -179,205 +162,8 @@
           </div>
           <div class="category__products">
             <div class="product__categories">
-              <div class="product__grid">
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/pizza-lap-xuong.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Hải Sản Xốt Mayonnaise - Ocean Mania</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Surf-turf-Pizza-Bo-Tom-Nuong-Kieu-My-1.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Bò & Tôm Nướng Kiểu Mỹ - Surf & Turf</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Okonomiyaki-banh-xeo-nhat.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Bánh Xèo Nhật - Okonomiyaki</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Thap-Cam-Thuong-Hang-Extravaganza.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Thập Cẩm Thượng Hạng - Extravaganza</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Hai-San-Xot-Mayonnaise-Ocean-Mania.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Hải Sản Xốt Mayonnaise - Ocean Mania</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizzaminsea-Hai-San-Nhiet-Doi-Xot-Tieu.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Hải Sản Nhiệt Đới Xốt Tiêu - Pizzamin Sea</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Half-Half.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name">Half Half</a>
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Meat-lover-Pizza-5-Loai-Thit-Thuong-Hang.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza 5 Loại Thịt Thượng Hạng - Meat Lovers</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pepperoni-feast-Pizza-Xuc-Xich-Y.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Xúc Xích Ý Truyền Thống - Pepperoni Feast</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Hai-San-Xot-Ca-Chua-Seafood-Delight.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Hải Sản Xốt Cà Chua - Seafood Delight</a
-                      >
-                      <p class="product__price">
-                        <span>99,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div id="product1" class="product__grid">
+                 
               </div>
             </div>
           </div>
@@ -404,11 +190,11 @@
                   />
                   <p class="item__text">
                     Nhỏ (7")
-                    <!--  -->
+                    
                     :
                     <span class="coin__text">
                       79.000
-                      <!--  -->
+                      
                       ₫
                     </span>
                   </p>
@@ -421,11 +207,11 @@
                   />
                   <p class="item__text">
                     Vừa (9")
-                    <!--  -->
+                    
                     :
                     <span class="coin__text">
                       159.000
-                      <!--  -->
+                      
                       ₫
                     </span>
                   </p>
@@ -438,11 +224,11 @@
                   />
                   <p class="item__text">
                     Lớn (12")
-                    <!--  -->
+                    
                     :
                     <span class="coin__text">
                       229.000
-                      <!--  -->
+                      
                       ₫
                     </span>
                   </p>
@@ -452,148 +238,9 @@
           </div>
           <div class="category__products">
             <div class="product__categories">
-              <div class="product__grid">
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Sausage-Kid-Mania.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >PIZZA XÚC XÍCH XỐT PHÔ MAI - SAUSAGE KID MANIA</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Kid-mania-Pizza-Trung-Cut-Xot-Pho-Mai-1.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Trứng Cút Xốt Phô Mai - Kid Mania
-                      </a>
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Veggie-mania-Pizza-Rau-Cu-Thap-Cam.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Rau Củ Thập Cẩm - Veggie Mania</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Ga-Xot-Tuong-Kieu-Nhat-Teriyaki-Chicken.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Gà Xốt Tương Kiểu Nhật - Teriyaki Chicken</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Dam-Bong-Dua-Kieu-Hawaii-Hawaiian.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Dăm Bông Dứa Kiểu Hawaii - Hawaiian</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Pho-Mai-Hao-Hang-Cheese-Mania.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Phô Mai Hảo Hạng - Cheese Mania</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Ga-Pho-Mai-Thit-Heo-Xong-Khoi-Cheesy-Chicken-Bacon.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Gà Phô Mai Thịt Heo Xông Khói - Cheesy Chicken
-                        Bacon</a
-                      >
-                      <p class="product__price">
-                        <span>79,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div id="product2" class="product__grid">
+                
+                
               </div>
             </div>
           </div>
@@ -651,73 +298,14 @@
           </div>
           <div class="category__products">
             <div class="product__categories">
-              <div class="product__grid">
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Bo-Me-Hi-Co-Thuong-Hang-Prime-Beef.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Bò Mê-Hi-Cô Thượng Hạng - Prime Beef</a
-                      >
-                      <p class="product__price">
-                        <span>249,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-Hai-San-Kieu-Singapore-Singapore-Style-Seafood.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza Hải Sản Kiểu Singapore - Singapore Style
-                        Seafood</a
-                      >
-                      <p class="product__price">
-                        <span>249,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex__fit">
-                  <div class="card product__card">
-                    <div class="card__img">
-                      <a class="resize__img" href="">
-                        <img
-                          src="https://img.dominos.vn/Pizza-4-Vi-Pizza-Big-4.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="card__body">
-                      <a href="" class="product__name"
-                        >Pizza 4 Vị - Pizza Big 4</a
-                      >
-                      <p class="product__price">
-                        <span>329,000₫</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div id="product3" class="product__grid">
+                 
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <footer id="footer">
         <div class="container_footer">
@@ -728,16 +316,14 @@
           </div>
           <div class="cover_footer grid">
             <div class="col">
-              <img src="/img/domino.svg" alt="" class="domino_footer">
+              <img src="./domino.svg" alt="" class="domino_footer">
               <div class="call_footer">
                 <div class="phone"><i class="fa-solid fa-phone"></i>
-                <p>Hotline Đặt Hàng</p><br>
+              <p>Hotline Đặt Hàng</p>
               
-                
                 </div>
-                <br><br>
-                <span >1900 6099</span>
-              
+                <br> <br>
+              <span >1900 6099</span>
               </div>
             </div>
             <div class="col">
@@ -757,11 +343,12 @@
               </div>
             </div>
             <div class="col">
-              <img src="/img/b2.png" alt="" width="175px" height="63px" class="buyproduct"></img>
+              <img src="./b2.png" alt="" width="175px" height="63px" class="buyproduct"></img>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+      
   </body>
+  <script src="index.js" ></script>
 </html>

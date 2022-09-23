@@ -144,44 +144,8 @@ body {
   background: #e31837;
 }
 
-/* Follwing */
-#follwing_product {
-  display: flex;
-  width: 100%;
-  height: auto;
-  background-color: #f2f4f8;
-  justify-content: flex-start;
-}
-.img_product img {
-  width: 400px;
-  height: 350px;
-  margin-top: 40px;
-  margin-left: 180px;
-}
-.content_procut {
-  margin: 100px 10px;
-}
-.content_procut h3 {
-  color: #5f6a7e;
-  font-size: 18px;
-  font-weight: 500;
-}
 
-.content_procut input {
-  margin-top: 20px;
-  width: 380px;
-  height: 40px;
-  border: none;
-}
-.fa-sharp {
-  width: 50px;
-  height: 45px;
-  background-color: #3d98c1;
-  color: #fff;
-  border: none;
-  border-top-right-radius: 10px;
-  cursor: pointer;
-}
+
 
 /* voucher */
 

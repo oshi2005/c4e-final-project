@@ -86,10 +86,20 @@ it
 
 
 /* ---------- Product view---------- */
+/* .product__view {
+  width: 100px;
+  height: 100px;
+  background: #004666;
+  position: ;
+
+<<<<<<< HEAD
+=======
+} */
 
 
 .product__filter {
     display: flex;
+    padding-top: 100px;
 }
 
 .product__filter--list {
