@@ -1,0 +1,79 @@
+:root {
+    --blue: #004666;
+    --red: #e31837;
+    --main: #3d98c1;
+  }
+  body {
+    background-image: url(img/background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+  }
+  #navbar {
+    background-color: var(--blue);
+    width: 100%;
+}
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar ul li {
+    padding: 8px;
+    list-style-type: none;
+    display: flex;
+
+}
+#navbar ul li a {
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 16px;
+    color: #fff;
+    
+}
+  .nav-link:hover {
+    background-color: var(--hover);
+
+    opacity: 0.7;
+}
+#navbar ul li img {
+    width: 75%;
+}
+#follwing_product {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f2f4f8;
+    justify-content: flex-start;
+  }
+  .img_product img {
+    width: 400px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 180px;
+  }
+  .content_procut {
+    margin: 100px 10px;
+  }
+  .content_procut h3 {
+    color: #5f6a7e;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .content_procut input {
+    margin-top: 20px;
+    width: 380px;
+    height: 40px;
+    border: none;
+  }
+  .fa-sharp {
+    width: 50px;
+    height: 45px;
+    background-color: #3d98c1;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
