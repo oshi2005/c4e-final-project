@@ -126,11 +126,16 @@ let productsPremium = product.map(function (item) {
               <span>${item.price}</span>
             </p>
           </div>
+          <button class = " bntCash " > Thêm vào giỏ hàng </button>
         </div> 
        </div>`}
 
 })
-toTalPremium.innerHTML = productsPremium.join(" ");
+toTalPremium.innerHTML = productsPremium.join(" ")
+
+
+
+
 
 let toTalFavorite = document.querySelector("#product2")
 let productsFavorite = product.map(function (item) {
@@ -153,6 +158,7 @@ let productsFavorite = product.map(function (item) {
               <span>${item.price}</span>
             </p>
           </div>
+          <button class = " bntCash " > Thêm vào giỏ hàng </button>
         </div> 
        </div>`}
 
@@ -184,6 +190,7 @@ let productsSignature = product.map(function (item) {
               <span>${item.price}</span>
             </p>
           </div>
+          <button class = " bntCash " > Thêm vào giỏ hàng </button>
         </div> 
        </div>`}
 
@@ -198,10 +205,80 @@ toTalSignature.innerHTML = productsSignature.join(" ");
 let card = document.querySelectorAll(".flex__fit");
 card.forEach(function (item) {
   item.addEventListener("click", (e) => {
-   let a = e.target
-   console.log(a)
+    let bnt = e.target
+    let products = bnt.parentElement
+    let productImg = products.querySelector("img").src
+    let productPrice = products.querySelector("span").innerText
+    let productName = products.querySelector(".product__name").innerText;
+    console.log(productImg, productName, productPrice)
+
+    // productAdd.push({ productImg, productName, productPrice })
+    // console.log(productAdd)
   })
 })
+
+
+
+
+
+
+// function Addcard (productImg,productName,productPrice) {
+//   let productContent = ` <li class="product-item">
+//   <div style="flex: 1.5px" class="product-img">
+//     <img src=" ${productImg}" alt="" />
+//   </div>
+//   <div style="flex: 2" class="product-infor">
+//     <span>${productName}</span>
+//     <p>size vừa</p>
+//     <p>${productPrice}</p>
+//     <button class="btnDelete" style="display: block">xóa</button>
+//   </div>
+//   <div style="flex: 4" class="btn-bill">
+//     <button class="bntMath">-</button>
+//     <input class="input" type="text" min="1" />
+//     <button class="bntMath">+</button>
+//     <a href="#">Chương trình khuyến mãi</a>
+//   </div>
+// </li>`
+// let AddProduct = document.querySelector(".products-menu")
+// AddProduct.innerHTML=productContent
+// AddProduct.append(productContent)
+
+
+
+
+
+// }
+// AddProduct = document.querySelector(".products-menu")
+// console.log (AddProduct)
+//  let productAddNew = productAdd.map( function (item){
+//   return ` <li class="product-item">
+//   <div style="flex: 1.5px" class="product-img">
+//     <img src="${item.productImg}" alt="" />
+//   </div>
+//   <div style="flex: 2" class="product-infor">
+//     <span>${item.productName}</span>
+//     <p>size vừa</p>
+//     <p>${item.productPrice}</p>
+//     <button class="btnDelete" style="display: block">xóa</button>
+//   </div>
+//   <div style="flex: 4" class="btn-bill">
+//     <button class="bntMath">-</button>
+//     <input class="input" type="text" min="1" />
+//     <button class="bntMath">+</button>
+//     <a href="#">Chương trình khuyến mãi</a>
+//   </div>
+// </li>`
+//  });
+//  AddProduct.innerHTML = productAddNew.join (" ")
+
+
+
+
+
+
+// productAdd.push(productImg,productName,productPrice)
+// console.log(productAdd)
 
 
 
@@ -219,18 +296,108 @@ card.forEach(function (item) {
 //       console.log(product)
 //   })
 // })
- 
+
 
 
 
 // filter products
-// let btnAll = document.querySelector(".All")
-// let bntSeeFood = document.querySelector(".seeFood")
-// let bntBeef = document.querySelector(".beef")
-// let bntChicken = document.querySelector(".chicken")
-// let bntMeat = document.querySelector(".meat")
-// let bntHealthy = document.querySelector("healthy")
-// console.log(bntBeef)
+let btnAll = document.querySelector(".All")
+let bntSeeFood = document.querySelector(".seeFood")
+let bntBeef = document.querySelector(".beef")
+let bntChicken = document.querySelector(".chicken")
+let bntMeat = document.querySelector(".meat")
+let bntHealthy = document.querySelector("healthy")
+
+
+
+btnAll.onclick = function (e) {
+  e.target.id;
+  toTalPremium.innerHTML = productsPremium.join(" ")
+  toTalFavorite.innerHTML = productsFavorite.join(" ");
+  toTalSignature.innerHTML = productsSignature.join(" ")}
+
+
+
+
+
+  bntSeeFood.onclick = function (e) {
+    e.target.id;
+    let addSeefoodFav = document.querySelector("#product2")
+    let addSeefoodPre = document.querySelector("#product1")
+    let addSeefoodSig = document.querySelector("#product3")
+    console.log (addSeefoodPre)
+    
+      let seeFoodPre =  product.map(function (item) {
+        if (item.id =="seeFood") {
+          return `<div id = " item-${item.id}" class="flex__fit">
+               <div   class="card product__card">
+                <div class="card__img">
+                  <a class="resize__img" href="">
+                    <img
+                      src="${item.img}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card__body">
+                  <a href="" class="product__name"
+                    >${item.name}</a
+                  >
+                  <p class="product__price">
+                    <span>${item.price}</span>
+                  </p>
+                </div>
+                <button class = " bntCash " > Thêm vào giỏ hàng </button>
+              </div> 
+             </div>`}
+      
+      })
+      console.log(seeFoodPre)
+      addSeefoodPre.innerHTML = seeFoodPre.join(" ")
+    }
+    
+
+    
+  
+
+  // let toTalPremium = document.querySelector("#product1")
+  // console.log(toTalPremium)
+  // let productsPremium = product.map(function (item) {
+  //   if (item.price === "99,000₫") {
+  //     return `<div id = " item-${item.id}" class="flex__fit">
+  //          <div   class="card product__card">
+  //           <div class="card__img">
+  //             <a class="resize__img" href="">
+  //               <img
+  //                 src="${item.img}"
+  //                 alt=""
+  //               />
+  //             </a>
+  //           </div>
+  //           <div class="card__body">
+  //             <a href="" class="product__name"
+  //               >${item.name}</a
+  //             >
+  //             <p class="product__price">
+  //               <span>${item.price}</span>
+  //             </p>
+  //           </div>
+  //           <button class = " bntCash " > Thêm vào giỏ hàng </button>
+  //         </div> 
+  //        </div>`}
+  //   console.log(productsPremium)
+
+  // })
+  // toTalPremium.innerHTML = productsPremium.join(" ")
+
+
+
+
+
+
+
+
+
 
 
 
@@ -255,64 +422,21 @@ card.forEach(function (item) {
 //          <span>${item.price}</span>
 //        </p>
 //      </div>
-//    </div> 
-//   </div>`, toTalPremium.innerHTML = products.join("")
+//    </div>
+//   </div>`
 //     }
-//     else if (type == item.id || item.price === "79,000₫") {
-//       return `<div id=" item-${item.id}"  class="flex__fit">
-//     <div   class="card product__card">
-//      <div class="card__img">
-//        <a class="resize__img" href="">
-//          <img
-//            src="${item.img}"
-//            alt=""
-//          />
-//        </a>
-//      </div>
-//      <div class="card__body">
-//        <a href="" class="product__name"
-//          >${item.name}</a
-//        >
-//        <p class="product__price">
-//          <span>${item.price}</span>
-//        </p>
-//      </div>
-//    </div> 
-//   </div>`, toTalFavorite.innerHTML = products.join(" ")
-//     } else if (Type == item.id || item.price == "249,000₫" || item.price == "329,000₫") {
-//       return `<div id=" item-${item.id}"  class="flex__fit">
-//     <div   class="card product__card">
-//      <div class="card__img">
-//        <a class="resize__img" href="">
-//          <img
-//            src="${item.img}"
-//            alt=""
-//          />
-//        </a>
-//      </div>
-//      <div class="card__body">
-//        <a href="" class="product__name"
-//          >${item.name}</a
-//        >
-//        <p class="product__price">
-//          <span>${item.price}</span>
-//        </p>
-//      </div>
-//    </div> 
-//   </div>`, toTalSignature.innerHTML = products.join(" ")
-//     }
-//   }
-//   )
+//   })
+//   toTalPremium.innerHTML = products.join("")
 // }
 
-// toTalPremium.innerHTML = products.join("")
-// toTalFavorite.innerHTML = products.join(" ");
-// toTalSignature.innerHTML = products.join(" ")
 
 
 
 
 
+// btnAll.onclick = function () {
+//   loading("All")
+// }
 
 // bntSeeFood.onclick = function () {
 //   loading("seeFood")
@@ -328,7 +452,9 @@ card.forEach(function (item) {
 // // }
 // bntMeat.onclick = function () {
 //   loading("meat")
-
+// }
 // btnAll.onclick = function () {
 //   loading("seeFood")
 // }
+
+
